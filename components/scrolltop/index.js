@@ -1,0 +1,37 @@
+/**
+ * Author: Zane 448482356@qq.com
+ * Date: 2016-01-25
+ */
+
+
+
+import React from 'react';
+
+let Test = React.createClass({
+	getInitialState() {
+	    return {
+	        name: 'tom'
+	    };
+	},
+	handle() {
+		this.setState({
+			name: 'zane'
+		});
+	},
+	componentDidMount() {
+
+	},
+	render() {
+		return (
+			<div onClick={this.handle}>{this.state.name}</div>
+		);
+	}
+
+});
+
+React.render(
+	<Test  / > , 
+	document.getElementById('test')
+);
+
+module.exports = Test;
