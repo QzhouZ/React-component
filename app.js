@@ -6,9 +6,19 @@
 
 
 import React from 'react';
-import Test from './components/scrolltop';
+import scrolltop from './components/scrolltop/demo';
 
-React.render(
-	<Test  / > , 
-	document.getElementById('test')
-);
+// let App = {
+// 	scrolltop: require('./components/scrolltop')
+// };
+
+// let pathname = window.location.pathname;
+
+// let componentName = pathname.split('/')[2];
+
+// let C = App[componentName];	
+
+// React.render (
+// 	<C  / > , 
+// 	document.getElementById('component')
+// );

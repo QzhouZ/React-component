@@ -32,7 +32,7 @@ module.exports = function(options) {
         resolve: {
             extensions: ['', '.js', '.jsx', '.json', '.coffee'],
             alias: {
-                
+                // component: path.join(__dirname, "./")
             }
         }
     };
@@ -50,6 +50,7 @@ module.exports = function(options) {
             new webpack.HotModuleReplacementPlugin(),
             new webpack.NoErrorsPlugin()
         ];
+        config.output.publicPath = '/build/';
         config.module.loaders.unshift({
             test: /\.jsx?$/,
             loader: 'react-hot',

@@ -22,14 +22,8 @@ let Test = React.createClass({
 
 	},
 	render() {
-		var txt;
-		if (this.props.type == 1) {
-			txt = 1311;
-		} else {
-			txt = 2212;
-		}
 		return (
-			<div onClick={this.handle}>{this.state.name} {txt}</div>
+			<div onClick={this.handle}>{this.state.name}12</div>
 		);
 	}
 
