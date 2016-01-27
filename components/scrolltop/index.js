@@ -24,7 +24,7 @@ let Test = React.createClass({
 	render() {
 		var txt;
 		if (this.props.type == 1) {
-			txt = 1311;
+			txt = 13112;
 		} else {
 			txt = 2212;
 		}

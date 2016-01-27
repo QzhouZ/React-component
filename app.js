@@ -4,8 +4,6 @@
  */
 
 
-
-import React from 'react';
 import scrolltop from './components/scrolltop/demo';
 
 // let App = {
