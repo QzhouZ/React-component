@@ -4,7 +4,11 @@
  */
 
 
-import scrolltop from './components/scrolltop/demo';
+var component = window.location.href.split('components/')[1].split('/')[0];
+require('./components/'+component+'/demo');
+
+// import scrolltop from './components/scrolltop/demo';
+// import checkbox from './components/checkbox/demo';
 
 // let App = {
 // 	scrolltop: require('./components/scrolltop')
